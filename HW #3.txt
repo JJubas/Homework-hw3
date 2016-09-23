@@ -1,0 +1,59 @@
+                                           Joey Jubas 
+										    9-23-16
+
+
+1. For the regional data base, I think using an array woud be the best option. Arrays use less memory than lists, and 
+are easier for keep track of the of the order of the transactions as they occur. Especially since the information can not 
+be altered so we do not need to worry about editing any of the information once it is entered into the array. Arrays are faster 
+for finding information if a customer would like to find out about their transactions since Arrays are easier for searching. If 
+the size becomes a problem, then the size of the Array can be doubled using the method we discussed in class. At the end of the day, 
+a method could be written involving only one loop to copy everything into a linked list for the national data base. 
+
+2. For the national data base, I think using a double linked list would be the best option. Since there is a lot of editing involved 
+on the national scale, such as combining, deleting, and retrieving data which is much faster and easier to do in a list linked in 
+both directions than an array. Especially when one must reinsert data into the data base in any position, a list is much more 
+convinent to use. Furthermore, a list can go on for as long as it needs, so the size of adding three arrays together from different 
+regions around the world is not a problem. 
+
+3. Asymptotic Runtime for the Bolded Actions:
+
+  a. Adding to an array is 1 because you are doing a basic operation to the array and it will always be constant. 
+
+  b. Altering to an array is 1 because you are searching for something in a sorted array (by time) so it is a basic operation to index
+
+  c. To find more information about an item in the array is 1 for similar reasons to above, once the spot is indexed, you can find out more 
+  informaton. The longest method is to find it, which for this case, is constant. 
+
+  d. To copy all the arrays into a single datebase is n because one loop will be written to iterite over the array and to copy it. 
+
+  e. To review everything in a linked list is n since it is a loop that goes through the entire list 
+
+  f. Combining elements in a linked list is n squared since we need to loop through the list, and then to check if there are double accounts and
+     then combine them if there are any doubles. 
+
+  g. Deleting in a linked list is n since only one loop is required to run through the list and see if the item should be deleted
+
+  h. Retrieving in a a linked list is n since only one loop is required to run through the list and find the item
+
+  i. Aggregating in a a linked list is n squared since aggregating is the same thing as combining elements 
+
+  j. Viewing the details of any summary or aggregate transaction a linked list is n since only one loop is required to find the aggregage transaction 
+
+  k. Retrieving the component transactions from the Array is n since only one loop is required to find the component 
+
+  l. Reinserting into the linked list is n since the method to copy from an array to the linked list is n
+
+  m. Deleting the aggregate is n since only one loop is required to find the aggregate to delete 
+
+  n. Aggregating a linked list is n squared since aggregating is a double loop method as explained above. 
+
+
+
+
+
+
+
+
+
+
+
